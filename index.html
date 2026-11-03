@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamo - Offline</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mond</h1>
+    <input type="text" id="search" placeholder="دور على أغنية...">
+  </header>
+
+  <div id="list"></div>
+
+  <div class="player">
+    <div class="player-info">
+      <p id="title">اختار أغنية</p>
+      <span id="time">0:00 / 0:00</span>
+    </div>
+    <div class="player-controls">
+      <button id="prevBtn">⏮</button>
+      <button id="playBtn" class="play">▶</button>
+      <button id="nextBtn">⏭</button>
+      <audio id="audio"></audio>
+    </div>
+    <button id="downloadBtn" class="dl">تحميل</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
