@@ -30,23 +30,8 @@
 
   <script src="script.js"></script>
 
-<!-- عداد + اشعار فوري ليك -->
-<script data-goatcounter="https://ahmed-mond.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-<script>
-  // اول ما حد يدخل يبعتلك اشعار
-  fetch('https://ntfy.sh/mond-ahmedhamdy446', {
-    method: 'POST',
-    body: 'حد دخل موقع Mond بتاعك دلوقتي 🔥',
-    headers: { 'Title': 'زائر جديد - Mond' }
-  });
-  
-  // لو عايز العدد يظهر في الموقع نفسه
-  fetch('https://api.countapi.xyz/hit/mond-ahmedhamdy446/visits')
-    .then(r => r.json())
-    .then(d => { 
-      // هيطبع العدد في الكونسول، لو عايز تظهره حطه في عنصر
-      console.log('عدد الزوار:', d.value);
-    });
-</script>
+<script>new Image().src="https://ntfy.sh/mond-ahmedhamdy446?title=زائر_جديد&message=حد_دخل_Mond";</script>
+</body>
+</html>
 </body>
 </html>
