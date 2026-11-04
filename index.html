@@ -30,8 +30,17 @@
 
   <script src="script.js"></script>
 
-  <!-- عداد الزوار - حطه قبل </body> -->
-<script data-goatcounter="https://mond-archive.goatcounter.com/count"
+  <!-- عداد الزوار + اشعار على موبايلك -->
+<script data-goatcounter="https://ahmed-mond.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// ابعت اشعار لـ ntfy اول ما حد يدخل
+fetch('https://ntfy.sh/mond-ahmedhamdy446', {
+  method: 'POST',
+  body: 'فيه حد دخل موقع Mond دلوقتي 🔥 - العدد زاد 1',
+  headers: { 'Title': 'زائر جديد - Mond' }
+});
+</script>
 </body>
 </html>
